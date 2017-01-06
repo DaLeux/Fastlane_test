@@ -10,9 +10,9 @@ lane :bonjour do
 
 end
 
-lane :depoly do
+lane :deploy do
 
-  version =get--version-number()
+  version = get_version_number()
   print version
 
 end
