@@ -3,7 +3,16 @@ lane :bonjour do
   UI.success "Bravo !"
 
   scan(
-    project: "FastlaneDemo.xcodeproj"
+    project: "FastlaneDemo.xcodeproj",
+    code_coverage: true
   )
+  xcov
+
+end
+
+lane :depoly do
+
+  version =get--version-number()
+  print version
 
 end
